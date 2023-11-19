@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - monty codes interpreter
@@ -40,3 +41,7 @@ int main(int argc, char *argv[])
 		}
 		free(content);
 	}
+	free_stack(stack);
+	fclose(file);
+return (0);
+}
